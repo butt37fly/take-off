@@ -1,3 +1,3 @@
-<?php
+<?php get_header(); ?>
 
-// butt37fly
+<?php get_footer(); ?>

@@ -1,0 +1,114 @@
+body,
+body * {
+  border: unset;
+  box-sizing: border-box;
+  line-height: 1.2em;
+  margin: unset;
+  padding: unset;
+
+  font-family: var(--font-family-secondary), sans-serif;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-01) transparent;
+}
+
+h1 {
+  font-size: var(--font-size-8);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-7);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--font-size-6);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: var(--font-size-5);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--font-size-4);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--font-size-3);
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-primary), sans-serif;
+}
+
+ul,
+p,
+span,
+div,
+input,
+label {
+  font-family: var(--font-family-secondary), sans-serif;
+  font-size: var(--font-size-2);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+input,
+label,
+ul {
+  --text-align: start;
+  color: var(--color-text);
+  text-align: var(--text-align);
+  width: 100%;
+}
+
+p {
+  margin-bottom: var(--size-2);
+}
+
+ul {
+  padding-left: var(--size-5);
+}
+
+li {
+  margin-bottom: var(--size-3);
+}
+
+li > ul {
+  margin-top: var(--size-3);
+}
+
+.title {
+  font-family: var(--font-family-primary), sans-serif;
+  font-size: var(--font-size-8);
+  font-weight: 500;
+}
+
+.subtitle {
+  font-family: var(--font-family-primary), sans-serif;
+  font-size: var(--font-size-5);
+  font-weight: 700;
+}
+
+.text {
+  font-family: var(--font-family-primary), sans-serif;
+  font-size: var(--font-size-2);
+  font-weight: 400;
+}
