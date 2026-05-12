@@ -65,7 +65,7 @@ Text Domain: take-off
   --size-8: 40px;
   --size-9: 52px;
 
-  --corner-01: 10px;
+  --corner-01: 18px;
 
   --corner-full: 100px;
 
@@ -85,6 +85,9 @@ body {
   --font-size-text: var(var(--font-size-3));
 
   background-color: var(--color-background);
+
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @supports selector(::-webkit-scrollbar) {

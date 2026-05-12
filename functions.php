@@ -5,6 +5,7 @@ require get_theme_file_path() . '/inc/enqueue.php';
 require get_theme_file_path() . '/inc/menus.php';
 
 
+add_filter('use_block_editor_for_post', '__return_false');
 add_theme_support('custom-logo');
 
 
