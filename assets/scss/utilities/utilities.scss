@@ -1,0 +1,25 @@
+@use '_mixins' as *;
+@use 'variables' as *;
+
+.u-flex {
+  --justify: center;
+  --align: center;
+  --width: auto;
+
+  display: flex;
+
+  align-items: var(--align);
+  flex-direction: column;
+  justify-content: var(--justify);
+  width: var(--width);
+}
+
+// Clases base
+@include generate-responsive-utilities('');
+
+// Clases responsive
+@each $breakpoint, $value in $breakpoints {
+  @include respond-to($breakpoint) {
+    @include generate-responsive-utilities('#{$breakpoint}-');
+  }
+}

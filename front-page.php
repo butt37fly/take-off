@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-
-    <section class="hero">
+    <section class="hero u-flex u-justify-center u-align-center u-g-7">
 
         <?php
 
@@ -13,7 +12,6 @@
         ?>
 
     </section>
-
 </main>
 
 <?php get_footer(); ?>

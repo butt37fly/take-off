@@ -1,0 +1,129 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@mixin respond-to($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (max-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+$order: ();
+
+@for $i from 0 through 10 {
+  $order: map.merge(
+    $order,
+    (
+      $i: $i,
+    )
+  );
+}
+
+@mixin generate-responsive-utilities($prefix: '') {
+  @each $name, $value in $sizes {
+    // Padding
+    .u-#{$prefix}p-#{$name} {
+      padding: $value;
+    }
+    .u-#{$prefix}px-#{$name} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .u-#{$prefix}py-#{$name} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    .u-#{$prefix}pt-#{$name} {
+      padding-top: $value;
+    }
+    .u-#{$prefix}pb-#{$name} {
+      padding-bottom: $value;
+    }
+    .u-#{$prefix}pl-#{$name} {
+      padding-left: $value;
+    }
+    .u-#{$prefix}pr-#{$name} {
+      padding-right: $value;
+    }
+
+    // Margin
+    .u-#{$prefix}m-#{$name} {
+      margin: $value;
+    }
+    .u-#{$prefix}mx-#{$name} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .u-#{$prefix}my-#{$name} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+    .u-#{$prefix}mt-#{$name} {
+      margin-top: $value;
+    }
+    .u-#{$prefix}mb-#{$name} {
+      margin-bottom: $value;
+    }
+    .u-#{$prefix}ml-#{$name} {
+      margin-left: $value;
+    }
+    .u-#{$prefix}mr-#{$name} {
+      margin-right: $value;
+    }
+
+    // Gap
+    .u-#{$prefix}g-#{$name} {
+      gap: $value;
+    }
+  }
+
+  @each $name, $value in $width {
+    .u-#{$prefix}w-#{$name} {
+      --width: #{$value};
+    }
+  }
+
+  @each $name in $direction {
+    .u-#{$prefix}#{$name} {
+      flex-direction: #{$name};
+    }
+  }
+
+  @each $name in $text-transform {
+    .u-#{$prefix}text-#{$name} {
+      text-transform: #{$name};
+    }
+  }
+
+  @each $name, $value in $flex-align {
+    .u-#{$prefix}justify-#{$name} {
+      --justify: #{$value};
+    }
+
+    .u-#{$prefix}align-#{$name} {
+      --align: #{$value};
+    }
+  }
+
+  @each $name, $value in $text-align {
+    .u-#{$prefix}text-#{$name},
+    .u-#{$prefix}text-#{$name} > p {
+      --text-align: #{$value};
+    }
+  }
+
+  @each $name, $value in $order {
+    .u-#{$prefix}order-#{$name} {
+      order: $value;
+    }
+  }
+
+  .u-#{$prefix}hidden {
+    display: none !important;
+  }
+
+  .u-#{$prefix}visible {
+    display: block !important;
+  }
+}

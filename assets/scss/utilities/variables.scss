@@ -1,0 +1,45 @@
+$width: (
+  100: 100%,
+  50: 50%,
+  auto: auto,
+);
+
+$direction: (row, row-reverse, column, column-reverse);
+
+$flex-align: (
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
+
+$text-align: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  justify: justify,
+);
+
+$text-transform: (normal, uppercase, lowercase);
+
+$sizes: (
+  0: unset,
+  1: var(--size-1),
+  2: var(--size-2),
+  3: var(--size-3),
+  4: var(--size-4),
+  5: var(--size-5),
+  6: var(--size-6),
+  7: var(--size-7),
+  8: var(--size-8),
+  9: var(--size-9),
+  auto: auto,
+);
+
+$breakpoints: (
+  sm: 768px,
+  md: 1024px,
+  lg: 1440px,
+);

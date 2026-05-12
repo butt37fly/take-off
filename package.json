@@ -1,0 +1,25 @@
+{
+  "name": "take-off",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/scss/main.scss:assets/css/main.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butt37fly/take-off.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/butt37fly/take-off/issues"
+  },
+  "homepage": "https://github.com/butt37fly/take-off#readme",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}
