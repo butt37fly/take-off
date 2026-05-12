@@ -10,7 +10,7 @@ add_theme_support('custom-logo');
 
 
 if (! function_exists('b37_display_custom_logo')) {
-    function b37_display_custom_logo()
+    function b37_display_custom_logo(): void
     {
         echo '<a href="' . get_permalink() . '" class="header__logo">';
 
@@ -24,4 +24,36 @@ if (! function_exists('b37_display_custom_logo')) {
 
         echo '</a>';
     }
+}
+
+if (! function_exists('b37_display_table_chars')) {
+    function b37_display_table_chars(array $data): void
+    {
+
+        $html = "";
+
+        foreach ($data as $value) {
+            $html .= "<div class='c-tickets__row'>";
+            foreach ($value as $char) {
+
+                $html .= "<div class='c-tickets__item'>" . esc_html($char) . "</div>";
+            }
+
+            $html .= "</div>";
+        }
+
+        echo $html;
+    }
+}
+
+if (! function_exists('b37_add_file_types_to_uploads')) {
+    function b37_add_file_types_to_uploads(array $file_types): array
+    {
+        $new_filetypes = array();
+        $new_filetypes['svg'] = 'image/svg+xml';
+        $file_types = array_merge($file_types, $new_filetypes);
+        return $file_types;
+    }
+
+    add_filter('upload_mimes', 'b37_add_file_types_to_uploads');
 }
