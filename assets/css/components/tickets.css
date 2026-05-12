@@ -1,0 +1,49 @@
+.c-tickets {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-3);
+  width: 100%;
+
+  & .c-tickets__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--size-2);
+    flex: 1 0;
+  }
+
+  & .c-tickets__title {
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+  }
+
+  & .c-tickets__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-1);
+  }
+
+  & .c-tickets__row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-1);
+  }
+
+  & .c-tickets__item {
+    --size: 3.12vw;
+
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: var(--color-gray-03);
+    color: var(--color-text);
+    display: flex;
+    font-size: calc(var(--size) * 0.8);
+    font-weight: 700;
+    justify-content: center;
+    max-width: 40px;
+    text-transform: uppercase;
+    width: var(--size);
+  }
+}

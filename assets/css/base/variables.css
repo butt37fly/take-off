@@ -1,0 +1,42 @@
+:root {
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 20px;
+  --font-size-5: 24px;
+  --font-size-6: 32px;
+  --font-size-7: 36px;
+  --font-size-8: 40px;
+  --font-size-9: 45px;
+
+  --font-family-primary: 'Plus Jakarta Sans';
+  --font-family-secondary: 'Inter';
+
+  --color-black: #202020;
+  --color-white: #fff;
+  --color-gray-01: #f2f2f2;
+  --color-gray-02: #a2a5aa;
+  --color-gray-03: #4e555d;
+  --color-gray-04: #393f47;
+  --color-blue-01: #49c6f3;
+  --color-blue-02: #232a33;
+  --color-blue-03: #1b2128;
+  --color-blue-04: #181d24;
+  --color-red-01: #f89485;
+
+  --size-1: 8px;
+  --size-2: 12px;
+  --size-3: 16px;
+  --size-4: 20px;
+  --size-5: 24px;
+  --size-6: 28px;
+  --size-7: 36px;
+  --size-8: 40px;
+  --size-9: 52px;
+
+  --corner-01: 18px;
+
+  --corner-full: 100px;
+
+  --content-width: 1140px;
+}
