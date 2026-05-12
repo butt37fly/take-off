@@ -33,10 +33,10 @@ if (! function_exists('b37_display_table_chars')) {
         $html = "";
 
         foreach ($data as $value) {
-            $html .= "<div class='c-tickets__row'>";
+            $html .= "<div class='c-tickets__row u-flex u-row u-g-1'>";
             foreach ($value as $char) {
 
-                $html .= "<div class='c-tickets__item'>" . esc_html($char) . "</div>";
+                $html .= "<span class='c-tickets__item u-flex u-justify-center u-align-center'>" . esc_html($char) . "</span>";
             }
 
             $html .= "</div>";
