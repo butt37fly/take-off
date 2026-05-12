@@ -1,0 +1,42 @@
+.hero-banner {
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 10vh !important;
+
+  &__background {
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    user-select: none;
+  }
+
+  &__cloud {
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    user-select: none;
+  }
+
+  &__cloud--01 {
+    /* transform: translate(-473px, 157px); */
+    width: calc(100px + 90vw);
+    z-index: 3;
+  }
+
+  &__cloud--02 {
+    /* transform: translate(551px, 47px); */
+    width: calc(100px + 54vw);
+    z-index: 1;
+  }
+
+  &__wrapper {
+    width: var(--content-width);
+    z-index: 2;
+  }
+
+  &__img {
+    height: auto;
+    object-fit: contain;
+    width: 500px;
+  }
+}

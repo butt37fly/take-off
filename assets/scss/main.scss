@@ -9,5 +9,8 @@
 @use 'components/tickets';
 
 @use 'sections/hero';
+@use 'sections/hero-banner';
+@use 'sections/hero-content';
+@use 'sections/hero-tickets';
 
 @use 'utilities/utilities';

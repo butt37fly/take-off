@@ -11,12 +11,12 @@ $field_button = [
 
 ?>
 
-<section class="hero-content">
-    <div class="hero-content__wrapper">
+<section class="hero-content u-flex u-w-100 u-p-9">
+    <div class="hero-content__wrapper u-flex u-column u-justify-center u-align-start u-g-4 u-m-auto">
 
         <h1 class="hero-content__title"> <?= esc_html($field_title); ?> </h1>
 
-        <div class="hero-content__content">
+        <div class="hero-content__content u-flex u-column u-g-4">
 
             <?= wp_kses_post($field_text) ?>
 

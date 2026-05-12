@@ -21,16 +21,16 @@ if ($field_image !== false) {
 
 ?>
 
-<section class="hero-banner">
+<section class="hero-banner u-flex u-justify-center u-align-center u-w-100 u-m-auto u-p-9">
     <div class="hero-banner__background">
         <img class="hero-banner__cloud hero-banner__cloud--01" src="<?= $background[0] ?>" width="200" height="100" alt="cloud_01">
         <img class="hero-banner__cloud hero-banner__cloud--02" src="<?= $background[1] ?>" width="200" height="100" alt="cloud_02">
     </div>
-    <div class="hero-banner__wrapper">
+    <div class="hero-banner__wrapper u-flex u-column u-justify-center u-align-center u-g-2">
 
         <?= $image ?>
 
-        <div class="hero-banner__content">
+        <div class="hero-banner__content u-flex u-column u-justify-center u-align-center u-g-6">
             <p> <?= esc_html($field_text); ?> </p>
 
             <?php get_template_part('template-parts/components/button', null, $field_button); ?>
