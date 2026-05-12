@@ -1,3 +1,3 @@
-<?php
+<?php wp_footer(); ?>
 
-// butt37fly
+<footer></footer>

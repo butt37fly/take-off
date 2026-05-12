@@ -55,14 +55,15 @@ Text Domain: take-off
   --color-blue-04: #181d24;
   --color-red-01: #f89485;
 
-  --size-1: 4px;
-  --size-2: 8px;
-  --size-3: 12px;
-  --size-4: 16px;
-  --size-5: 20px;
-  --size-6: 24px;
-  --size-7: 28px;
-  --size-8: 36px;
+  --size-1: 8px;
+  --size-2: 12px;
+  --size-3: 16px;
+  --size-4: 20px;
+  --size-5: 24px;
+  --size-6: 28px;
+  --size-7: 36px;
+  --size-8: 40px;
+  --size-9: 52px;
 
   --corner-01: 10px;
 
@@ -78,6 +79,10 @@ body {
   --color-text: var(--color-white);
   --color-background: var(--color-blue-02);
   --color-border: var(--color-white);
+
+  --font-size-title: var(var(--font-size-7));
+  --font-size-subtitle: var(var(--font-size-5));
+  --font-size-text: var(var(--font-size-3));
 
   background-color: var(--color-background);
 }
